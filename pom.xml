@@ -26,7 +26,6 @@
         <dependency>
             <groupId>com.ibeetl</groupId>
             <artifactId>beetl</artifactId>
-            <version>3.8.1.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.freemarker</groupId>
