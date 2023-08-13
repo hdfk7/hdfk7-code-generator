@@ -1,5 +1,7 @@
 package com.baomidou.mybatisplus.generator;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+
 public class CodeGenerator {
     static final String URL = "jdbc:mysql://10.10.10.10:3306/test?serverTimezone=GMT%2B8";
 
@@ -27,9 +29,10 @@ public class CodeGenerator {
                 //策略配置
                 .strategyConfig(builder -> {
                     builder.addInclude("test")
-                            .controllerBuilder().enableRestStyle().enableHyphenStyle().enableFileOverride()
+                            .controllerBuilder().enableFileOverride().enableRestStyle().enableHyphenStyle()
                             .serviceBuilder().enableFileOverride().formatServiceImplFileName("%sRepository")
-                            .entityBuilder().enableFileOverride().enableLombok();
+                            .entityBuilder().enableFileOverride().enableLombok().idType(IdType.INPUT)
+                            .mapperBuilder().enableFileOverride();
                 })
                 //执行
                 .execute();
