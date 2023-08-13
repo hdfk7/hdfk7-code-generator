@@ -17,9 +17,9 @@ public class CodeGenerator {
                 //包名配置
                 .packageConfig(builder -> {
                     builder.parent("com.hdfk7.module")
+                            .controller("controller")
                             .service("infrastructure")
                             .serviceImpl("infrastructure")
-                            .controller("controller")
                             .entity("domain.entity")
                             .mapper("infrastructure.mapper")
                             .xml("infrastructure.mapper.xml");
