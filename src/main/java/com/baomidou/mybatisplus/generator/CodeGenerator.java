@@ -29,7 +29,7 @@ public class CodeGenerator {
                     builder.addInclude("test")
                             .controllerBuilder().enableRestStyle().enableHyphenStyle().enableFileOverride()
                             .serviceBuilder().enableFileOverride().formatServiceImplFileName("%sRepository")
-                            .entityBuilder().enableLombok();
+                            .entityBuilder().enableFileOverride().enableLombok();
                 })
                 //执行
                 .execute();
