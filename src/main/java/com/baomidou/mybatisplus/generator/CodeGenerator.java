@@ -41,7 +41,7 @@ public class CodeGenerator {
         // 4、包配置
         PackageConfig pc = new PackageConfig();
         pc.setModuleName(null);
-        pc.setParent("com.hdfk7.module");
+        pc.setParent("cn.hdfk7.module");
         pc.setController("controller");
         pc.setEntity("domain.entity");
         pc.setService("infrastructure");
