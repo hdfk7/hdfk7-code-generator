@@ -1,7 +1,7 @@
 #!/bin/bash -ile
 
 export module=hdfk7-code-generator
-export version=1.0.6
+export version=1.0.7
 
 work=$(pwd)
 export target="target"
